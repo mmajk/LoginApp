@@ -7,7 +7,7 @@ public class RegisterValidator {
 
     public boolean vallidateUserName(String name){
 
-        if(name.length() < 3){
+        if(name.length() < 2){
             return false;
         }
         return true;

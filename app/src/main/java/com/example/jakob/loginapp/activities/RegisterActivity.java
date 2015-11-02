@@ -73,7 +73,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
 
             return;
         }else if(!registerValidator.vallidateUserName(name)){
-            Toast.makeText(RegisterActivity.this, "User name has to be at least 3 characters", Toast.LENGTH_SHORT).show();
+            Toast.makeText(RegisterActivity.this, "User name has to be at least 2 characters", Toast.LENGTH_SHORT).show();
         }
         if (myDbHelper.seIfUserExistsByEmail(mail)){
             Toast toast = Toast.makeText(this, "This email is allready registered", Toast.LENGTH_SHORT);
